@@ -1,5 +1,5 @@
 {
-	"geode": "4.3.1",
+	"geode": "4.7.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -28,6 +28,11 @@
             "importance": "suggested"
 		}
     ],
+	"api": {
+		"include": [
+			"api/*.hpp"
+		]
+	},
 	"settings": {
 		"left-align": {
             "name": "Left Align Groups",
