@@ -1,5 +1,6 @@
 #include <Geode/Geode.hpp>
 #include "../api/GroupViewUpdateEvent.hpp"
+#include "Geode/loader/Log.hpp"
 #include <Geode/modify/SetGroupIDLayer.hpp>
 #include <Geode/modify/CCScrollLayerExt.hpp>
 #include <Geode/modify/SetupRandAdvTriggerPopup.hpp>
@@ -13,7 +14,7 @@ using namespace geode::prelude;
 std::string getNameForID(NID nid, short id) {
     std::string result;
     NIDManager::event::EventGetNameForID("spaghettdev.named-editor-groups/v2/get-name-for-id", &result, nid, id).post();
-    log::info("name: {} id: {} NID: {}", result, id, (int)nid);
+    log::debug("name: {} id: {} NID: {}", result, id, static_cast<int>(nid));
     return result;
 }
 

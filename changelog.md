@@ -1,3 +1,6 @@
+# 1.0.17
+- New icon
+
 # 1.0.16
 - Fix a crash
 
